@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const hour=14;
+      const name='Tanisha';
+      console.log(`Time:${hour}`);
+      if(6<=hour && hour<=12){
+        console.log(`Good Morning ${name}`);
+      }
+      else if(13<=hour && hour<=17){
+        console.log(`Good Afternoon ${name}`);
+      }
+      else{
+        console.log(`Good Night ${name}`);
+      }
+
+      const age=9;
+      const isHoliday=true;
+      console.log(`Age=${age}`);
+      if((!isHoliday) && (age<=6 || age>=65)){
+        console('Discount');
+      }
+      else{
+        console('No Discount');
+      }
+
+      let random_number=Math.random();
+      if(random_number<0.5){
+        console.log("heads");
+      }
+      else{
+        console.log("tails");
+      }
+      
+      let result="";
+
+      if(random_number<0.5){
+        result="heads";
+      }
+      else{
+        result="tails";
+      }
+
+      let guess="heads";
+      if(guess===result){
+        console.log("You win!");
+      }
+      else{
+        console.log("You lose");
+      }
+      
+    </script>
+  </body>
+</html>

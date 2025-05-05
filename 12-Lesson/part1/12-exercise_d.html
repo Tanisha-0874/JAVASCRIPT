@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Functions d</title>
+</head>
+<body>
+
+  <button onclick="
+    update();
+    " class="start-button">Start</button>
+
+    <button onclick="
+    cart();
+    " class="cart-button">Add to cart</button>
+
+    <p class="paracl"></p>
+
+  <script>
+    let timeoutId;
+
+    function update(){
+      document.querySelector('.start-button').innerHTML='Loading';
+      setTimeout(function(){
+      const value=document.querySelector('.start-button');
+        value.innerHTML='Finished';
+     },1000);
+    }
+
+    function cart(){
+      document.querySelector('.paracl').innerHTML='Added';
+      clearTimeout(timeoutId);
+
+      timeoutId=setTimeout(function(){
+        document.querySelector('.paracl').innerHTML='';
+      },2000);
+    }
+
+ 
+
+
+
+
+
+
+
+  </script>
+
+
+  
+</body>
+</html>

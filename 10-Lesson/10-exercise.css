@@ -1,0 +1,60 @@
+
+.cart-button{
+  background-color: rgb(255, 216, 20);
+  color: black;
+  padding:5px 30px;
+  border:none;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+.req-button{
+  background-color: black;
+  color: white;
+  padding:5px 15px;
+  border:none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.schedule-button{
+  background-color: rgb(230,230,230);
+  color: black;
+  padding:5px 15px;
+  border:none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-weight: bold; 
+   }
+
+  .game-button{
+    background-color:rgb(230,230,230);
+    color: black;
+    padding:10px 25px;
+    border-radius: 5px;
+    border: none;
+   }
+
+   .music-button{
+    background-color:rgb(230,230,230);
+    color: black;
+    padding:10px 25px;
+    border-radius: 5px;
+    border: none;
+   }
+
+   .tech-button{
+    background-color:rgb(230,230,230);
+    color: black;
+    padding:10px 25px;
+    border-radius: 5px;
+    border: none;
+   }
+
+
+
+   .is-toggled{
+    background-color:black;
+    color:white;
+    padding:10px 25px;
+    border-radius: 5px;
+    border:none;
+   }

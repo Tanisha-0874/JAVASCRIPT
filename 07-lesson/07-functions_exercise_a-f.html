@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Function exercises</title>
+  </head>
+  <body>
+    <script>
+      function greet(name){
+        if(!name){
+          console.log('Hi there');
+        }
+        else{
+        console.log(`${name}`);
+        }   
+      }
+      greet();
+
+      function convertTofahrenheit(celsius){
+        const res=(celsius*(9/5))+32;
+        return `${res}F`;
+      }
+      console.log(convertTofahrenheit(25));
+
+      function convertToCelsius(fahrenheit){
+         const res=(fahrenheit-32)*(5/9);
+         return `${res}C`;
+      }
+
+      function convertTemperature(degrees,unit){
+        if(unit==='C'){
+          console.log(convertTofahrenheit(degrees));
+        }
+        else if(unit==='F'){
+          console.log(convertToCelsius(degrees));
+        }
+      }
+      console.log(convertTemperature(86,'F'));
+      
+
+    </script>
+
+  </body>
+</html>

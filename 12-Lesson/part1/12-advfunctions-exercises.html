@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercises of Advanced functions</title>
+</head>
+<body>
+
+  <button onclick="
+    update();
+    " class="start-button">Start</button>
+  
+  <script>
+    let add = function (){
+      console.log(2+3);
+    }
+    add();
+    add();
+
+    function runTwice(fun){
+      fun();
+      fun();
+    }
+    runTwice(function(){
+      console.log('12b');
+    })
+     runTwice(add);
+
+     function update(){
+      setTimeout(function(){
+      const value=document.querySelector('.start-button');
+        value.innerHTML='Finished';
+     },1000);
+    }
+
+  </script>
+
+
+
+</body>
+</html>

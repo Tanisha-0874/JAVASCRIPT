@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Document</title>
+</head>
+
+<body>
+  <button>9a</button>
+  <button class="js-button">9b</button>
+
+  <button
+  onclick="
+  document.querySelector('.paracl').innerHTML='You chose:heads';
+  "
+  >heads</button>
+
+  <button
+  onclick="
+  document.querySelector('.paracl').innerHTML='You chose:tails';
+  "
+  >tails</button>
+
+
+  <p class="paracl"></p>
+
+  <input class="inp"
+  onkeydown="
+  if(event.key==='Enter'){
+    const val=document.querySelector('.inp').value;
+  document.querySelector('.paracl1').innerHTML=`Your name is ${val}`;
+  }
+  "
+  
+  >
+  
+  <button
+  onclick="
+  const val=document.querySelector('.inp').value;
+  document.querySelector('.paracl1').innerHTML=`Your name is ${val}`;
+  "
+  >Submit</button>
+  <p class="paracl1"></p>
+
+
+  <script>
+    console.log(document.querySelector('button'));
+    document.querySelector('.js-button') .innerHTML='9b done!';
+    
+    
+  </script>
+  
+</body>
+</html>

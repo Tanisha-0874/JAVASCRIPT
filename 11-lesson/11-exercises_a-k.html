@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Arrays and loops exercise</title>
+
+</head>
+
+<body>
+  <script>
+    const nums=[10,20,30];
+    nums[2]=99;
+    console.log(nums);
+
+    function getLastValue(nums){
+      const val=nums[nums.length-1];
+      return val;
+    }
+    console.log(getLastValue(nums));
+    
+    function arraySwap(nums){
+
+      const temp=nums[0];
+      nums[0]=nums[nums.length-1];
+      nums[nums.length-1]=temp;
+
+      return nums;
+    }
+    
+    console.log(arraySwap(nums));
+
+    for(let i=0;i<=10;i+=2){
+      console.log(i);
+    }
+    for(let i=0;i<=5;i++){
+      console.log(i);
+    }
+
+    const arr1=[1,2,3];
+    const arr2=[];
+
+    for( let i=0;i<arr1.length;i++){
+      arr2[i]=arr1[i]+1;
+    }
+    console.log(arr2);
+    
+    const array1=[10,20,30];
+    const array2=[];
+    function addNUm(array1,num){
+      for(let i=0;i<array1.length;i++){
+        array2[i]=array1[i]+num;
+      }
+      return array2;
+    }
+    console.log(addNUm(array1,6));
+
+    const array3=[1,2,3,4,5];
+    function minMax(nums){
+      const resobj={
+        min:nums[0],
+        max:nums[0]
+      };
+      for(let i=0;i<nums.length;i++){
+        if(nums[i]<resobj.min){
+          resobj.min=nums[i];
+        }
+      }
+      for(let i=0;i<nums.length;i++){
+        if(nums[i]>resobj.max){
+          resobj.max=nums[i];
+        }
+      }
+      return resobj;
+
+
+    }
+    console.log(minMax(array3));
+
+    function countWords(nums){
+      const result={};
+
+      for(let i=0;i<nums.length;i++){
+        const word=nums[i];
+
+        if(!result[word]){
+          result[word]=1;
+        }
+        else{
+          result[word]++;
+        }
+      }
+      return result;
+    }
+
+    console.log(countWords(['green','green','pink','blue','blue']));
+
+  </script>
+</body>
+</html>
