@@ -174,7 +174,7 @@
      determined by the elements inside the column (auto).
      The 1st column will take up the remaining space. */
   grid-template-columns: 1fr auto;
-
+  align-items:center;
   font-size: 15px;
   margin-bottom: 9px;
 }
@@ -235,6 +235,7 @@
 .is-editing-quantity .update-quantity-link{
   display:none;
 }
+
 
 
 

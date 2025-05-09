@@ -27,7 +27,7 @@ export function getDeliveryOption(deliveryOptionId){
   return deliveryOption || deliveryOptions[0];
 }
 
-export function calulateDeliveryDate(deliveryOption){
+export function calculateDeliveryDate(deliveryOption){
   const today=dayjs();
   const deliveryDate=today.add(
     deliveryOption.deliveryDays,'days'
@@ -37,4 +37,3 @@ export function calulateDeliveryDate(deliveryOption){
   );
   return dateString;
 }
-
